@@ -72,6 +72,6 @@ int main()
 
 	delete Player;					//delete를 해줘야 소멸자가 출력됨
 	
-	//추가
+	//추가의 추가
 	return 0;
 }
