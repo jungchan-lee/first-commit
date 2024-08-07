@@ -53,7 +53,7 @@ int main()
 		Boars[i]->Move();
 	}
 	
-	for (int i = 0; i < Goblins.size(); i++)
+	for (int i = 0; i < Goblins.size(); i++) // 생성한 몬스터들 내용물(값) 지우기
 	{
 		delete Goblins[i];
 	}
@@ -65,8 +65,13 @@ int main()
 	{
 		delete Boars[i];
 	}
+
+	Goblins.clear(); //가리키는 포인터(주소값) 지우기
+	Slimes.clear();
+	Boars.clear();
+
 	delete Player;					//delete를 해줘야 소멸자가 출력됨
 	
-
+	//추가
 	return 0;
 }
